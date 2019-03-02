@@ -1,0 +1,16 @@
+{
+  "name": "reccy",
+  "version": "1.0.0",
+  "description": "Watch and compile C++ files",
+  "main": "reccy.js",
+  "preferGlobal": true,
+  "bin": {
+    "reccy": "reccy.js"
+  },
+  "author": "Tremaine Buchanan",
+  "license": "ISC",
+  "repository":  {
+    "type": "git",
+    "url": "https://github.com/tremainebuchanan/reccy.git"
+  }
+}
