@@ -7,10 +7,14 @@
   "bin": {
     "reccy": "reccy.js"
   },
+  "engines": {
+    "node": ">=8.0.0"
+  },
   "author": "Tremaine Buchanan",
   "license": "ISC",
   "repository":  {
     "type": "git",
     "url": "https://github.com/tremainebuchanan/reccy.git"
-  }
+  },
+  "keywords": ["c++", "cpp", "file watcher", "javascript", "node", "utility"]
 }

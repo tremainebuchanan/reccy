@@ -33,7 +33,15 @@ const app = {
                 }, 100);
                 console.log(`${file_name} file was changed`);
                 const compile_file = spawn('g++', ["-o", output_file, file_name]);
-                console.log(`${output_file} object file successfully generated`);
+                
+                compile_file.stdout.on('data', function(data){
+                    console.log(`stdout: ${data}`)
+                    console.log(`${output_file} object file successfully generated`);
+                })
+
+                compile_file.stderr.on('data', function(data){
+                    console.log(`stderr: ${data}`)
+                })               
             }
         });
     }
